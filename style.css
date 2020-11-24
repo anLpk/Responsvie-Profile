@@ -1,0 +1,129 @@
+/* Default Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {scroll-behavior: smooth;}
+
+body {
+    margin: 0;
+    background-color: #F7F9FC;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+/* Layout */
+.all-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card, .card-two {
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.card-two {
+    margin: 20px;
+}
+
+h1 {
+    opacity: .8;
+}
+
+h2 {
+    font-size: 36px;
+    opacity: .8;
+}
+.pro {
+    text-decoration: underline;
+}
+
+#ap {
+    padding: 1.5em;
+}
+/* List Style */
+ul {
+    list-style: none;
+}
+
+/* Link Style */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: tomato;
+    zoom: 1.2;
+}
+/* Button Style */
+.btn {
+    width: 12em;
+    height: 4em;
+    border: .5px solid #808080;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: bolder;
+    opacity: .7;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    margin: 1em;
+  }
+  
+.btn:hover {
+    opacity: 1;
+    background-color: #66BFBF;
+    color:white;
+}
+
+/* Media Query */
+@media (min-width: 960px) {
+    /* For a screen > 960px, this CSS will be read */
+    h1 {
+        font-size: 42px;
+    }
+
+    .fot-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+  }
+  @media (max-width: 720px) {
+    /* For a screen < 720px, this CSS will be read */
+    .all-container {
+      width: 600px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+
+    .fot-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+  }
+  @media (max-width: 540px) {
+    /* For a screen < 540px, this CSS will be read */
+    .all-container {
+      width: 450px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .fot-list {
+        display: block;
+        justify-content: center;
+    }
+  }
